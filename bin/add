@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PREFIX=images/blog
+DIR="$PREFIX/$(date '+%Y/%m/%d%n')"
+mkdir -p $DIR
+cp $1 "$DIR/"
+FILENAME=$(echo $1 | sed -E 's|.+/([^/]*)$|\1|')
+echo "https://raw.githubusercontent.com/jiikko/cdn/master/$DIR/$FILENAME"
