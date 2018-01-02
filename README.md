@@ -1,10 +1,17 @@
-# はい
-## リポジトリにファイルを追加する
+# What's this repository?
+this repository is CDN for my blog
+
+## Add file to this repository
 ```
 ./bin/add filepath
 ```
 
-## 画像を圧縮する
+## Compress the image
 ```
 convert -auto-orient -strip -quality 30 s.jpg d.jpg
+```
+
+## Get permalink
+```
+./bin/get_permalink filepath
 ```

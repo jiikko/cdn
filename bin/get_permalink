@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "https://raw.githubusercontent.com/jiikko/cdn/master/$1"
